@@ -1,63 +1,52 @@
 # Django Backend Setup
 
+Welcome to the backend repository for sales-dashboard-demo, built using Python + Django.
+
 ## Pre-requisites
 
 - Python (>= 3.8)
 - pip (Python's package installer)
-- virtualenv (optional but recommended)
 
 ## Installation & Setup
 
+Follow these steps to set up the Django backend on your local machine:
+
 ### 1. Clone the Repository
 
-```
+```bash
 git clone https://github.com/NickCodesGood/sales-dashboard-demo-api/
 cd sales-dashboard-demo-api
 ```
 
 ### 2. Setup a Virtual Environment (Optional)
 
-If you haven't installed \`virtualenv\` yet, you can install it with:
+Python 3 comes with a built-in module named `venv` to create virtual environments. 
 
-```
-pip install virtualenv
-```
+To create a virtual environment:
 
-Next, create and activate a virtual environment:
-
-```
-virtualenv venv
-source venv/bin/activate  # On Windows, use `venv\Scripts\activate\`
+```bash
+python3 -m venv venv
 ```
 
-## 3. Install Required Packages
+To activate the virtual environment:
 
+On macOS and Linux:
+
+```bash
+source venv/bin/activate
 ```
+
+On Windows:
+
+```bash
+venv\Scripts\activate
+```
+
+### 3. Install Required Packages
+
+```bash
 pip install -r requirements.txt
 ```
-
-### 4. Run Database Migrations
-```
-python manage.py migrate
-```
-
-### 5. Start the Django Development Server
-
-```
-python manage.py runserver
-```
-
-After executing the above command, the Django development server will start, and you can access the app at http://127.0.0.1:8000/admin/.
-
-## Troubleshooting
-
-- Ensure your Python version meets the prerequisites.
-- If encountering issues after pulling new changes, try rerunning database migrations or reinstalling dependencies from \`requirements.txt\`.
-
-## Feedback
-
-For feedback or issues, please open a ticket on the repository's issue tracker or contact \[Your Contact Details\].
-
 
 ## Model and View Overview
 
@@ -105,9 +94,3 @@ This is a custom view to handle user login. Upon successful authentication, a to
 ## Additional Notes
 
 Always ensure your database credentials are kept securely. Avoid hardcoding them directly in the `settings.py`. Instead, consider using environment variables or a secrets management solution, especially for production setups.
-
-## Feedback & Contributions
-
-We welcome your feedback and contributions. Please raise any issues or pull requests on the repository's issue tracker or contact \[Your Contact Details\].
-
-
