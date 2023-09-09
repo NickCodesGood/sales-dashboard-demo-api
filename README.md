@@ -1,6 +1,3 @@
-# sales-dashboard-demo-api
-a django backend for sales-dashboard-demo nextjs frontend
-
 # Django Backend Setup
 
 ## Pre-requisites
